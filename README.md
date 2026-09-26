@@ -24,12 +24,9 @@ the cause instead of stopping at "it works now".
 | # | Note | Domain | Root cause | Evidence |
 |---|---|---|---|---|
 | 001 | [Bluetooth audio dropouts were a Wi-Fi problem](notes/001-bluetooth-audio-wifi-powersave.md) | Wireless / power management | NetworkManager Wi-Fi power saving | 4 months of journal data · 152.5 → 18.3 failures/day |
-| 002 | _TLS errors that were DNS blocking_ | DNS / TLS | ISP-level resolution blocking | — |
-| 003 | _Anti-cheat 60099: a locale and a missing font_ | Wine / locale | `tr_TR` + absent Windows font | — |
-| 004 | _Desktop shell dying after every upgrade_ | Qt / ABI | `qt6-base` ABI break | — |
-| 005 | _Migrating a whole desktop environment, reversibly_ | Config management | — | — |
+| 002 | [A "dead" flash drive was write-protecting itself](notes/002-usb-write-protect.md) | USB storage / controller firmware | Controller latched permanent read-only | Full-surface read: 58 GiB · 0 errors · steady 98.2 MB/s |
 
-<sub>italics = written up next</sub>
+<sub>a note appears here when it's actually written — not before</sub>
 
 ## Tools
 
